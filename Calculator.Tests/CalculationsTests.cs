@@ -1,6 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
 using Moq;
+using Calculator.Abstract;
+using System.Collections.Generic;
 
 namespace Calculator.Tests
 {
@@ -10,9 +12,20 @@ namespace Calculator.Tests
         private Calculations calculations;
         [SetUp]
         public void Init()
-        {         
-            calculations   = new Calculations();
+        {
+            var repoMock = new Mock<IRepo>();
+            repoMock.Setup(s => s.GetValues()).Returns(new List<int> { 10, 20, 30 });
+            var repo = repoMock.Object;
+            calculations   = new Calculations(repo);
         }
+
+        [Test]
+        public void GetFirst_Returns10()
+        {
+            var result = calculations.GetFirst();
+            Assert.AreEqual(10, result);
+        }
+
         [Test]
         [TestCase(2,2, 4)]
         [TestCase(2,3, 5)]

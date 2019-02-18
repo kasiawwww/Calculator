@@ -10,6 +10,8 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(new Calculations(new Repo()).GetFirst());
+            Console.Read();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculator.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,15 @@ namespace Calculator
 {
     public class Calculations
     {
+        private readonly IRepo repo;
+        public Calculations(IRepo repo)
+        {
+            this.repo = repo;     
+        }
+        public int GetFirst()
+        {
+            return repo.GetValues().First();
+        }
         public double Add(double a, double b)
         {
             return a + b;
