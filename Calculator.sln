@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{3B2A87C3-EB4E-4803-B3D1-7A09C76B401D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Tests", "Calculator.Tests\Calculator.Tests.csproj", "{FAA6FD54-AA59-46EB-8503-8E0ACFECDD70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWsei.Selenium.Test", "EWsei.Selenium.Test\EWsei.Selenium.Test.csproj", "{24BB73D8-E651-454A-A114-5FF861FCE682}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{3B2A87C3-EB4E-4803-B3D1-7A09C76B401D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B2A87C3-EB4E-4803-B3D1-7A09C76B401D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B2A87C3-EB4E-4803-B3D1-7A09C76B401D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAA6FD54-AA59-46EB-8503-8E0ACFECDD70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA6FD54-AA59-46EB-8503-8E0ACFECDD70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA6FD54-AA59-46EB-8503-8E0ACFECDD70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA6FD54-AA59-46EB-8503-8E0ACFECDD70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24BB73D8-E651-454A-A114-5FF861FCE682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24BB73D8-E651-454A-A114-5FF861FCE682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24BB73D8-E651-454A-A114-5FF861FCE682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24BB73D8-E651-454A-A114-5FF861FCE682}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
